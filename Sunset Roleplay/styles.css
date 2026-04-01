@@ -1,0 +1,193 @@
+/* Reset základní stylů */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Tlačítka */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #ff6b00, #ff9900);
+}
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 107, 0, 0.5);
+}
+
+.btn-secondary {
+    background: #1e293b;
+}
+.btn-secondary:hover {
+    background: #334155;
+    transform: translateY(-3px);
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background: #0f172a;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.nav-link:hover {
+    color: #ff6b00;
+}
+
+/* Hero sekce */
+.hero {
+    height: 90vh;
+    background: url('https://via.placeholder.com/1600x900?text=Sunset+Roleplay') no-repeat center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+.hero-overlay {
+    position: absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.5);
+}
+
+/* Server sekce */
+.server-section, .vip-section, .gallery-section, .discord-section {
+    padding: 80px 20px 40px;
+    background: #0f172a;
+    color: #fff;
+}
+
+.server-card, .feature-card, .vip-card, .gallery-item {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 10px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.server-card:hover, .feature-card:hover, .vip-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+}
+
+/* Features grid */
+.features-grid, .vip-grid, .gallery-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* VIP sekce */
+.vip-card .price {
+    font-weight: bold;
+    margin: 10px 0;
+}
+.vip-card .badge {
+    background: #ff6b00;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Galerie */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+.gallery-item img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.5s ease;
+}
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+/* Discord sekce */
+.discord-section .btn-large {
+    padding: 15px 30px;
+    font-size: 1.2em;
+}
+
+/* Footer */
+.footer {
+    background: #0f172a;
+    color: #fff;
+    padding: 40px 20px 20px;
+}
+.footer a {
+    color: #ff6b00;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* IP Box */
+.ip-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.copy-btn {
+    background: #ff6b00;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+.copy-btn:hover {
+    background: #ff9900;
+}
