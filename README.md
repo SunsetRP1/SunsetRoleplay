@@ -21,4 +21,4 @@ Každý balíček má vlastní odkaz, který přesměruje na Discord ticket.
 ## 🔹 Jak spustit web lokálně
 1. Stáhni nebo klonuj repozitář:
 ```bash
-git clone https://github.com/UZIVATEL/SunsetRoleplay.git
+git clone https://github.com/ssrp/SunsetRoleplay.git
